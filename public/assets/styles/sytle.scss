@@ -1,0 +1,224 @@
+// Tomorrow Night Theme Variables
+$tomorrow-night-background:   #1d1f21; // Background
+$tomorrow-night-current-line: #282a2e; // Current Line
+$tomorrow-night-selection:    #373b41; // Selection
+$tomorrow-night-foreground:   #c5c8c6; // Foreground
+$tomorrow-night-comment:      #969896; // Comment
+$tomorrow-night-red:          #cc6666; // Red
+$tomorrow-night-orange:       #de935f; // Orange
+$tomorrow-night-yellow:       #f0c674; // Yellow
+$tomorrow-night-green:        #b5bd68; // Green
+$tomorrow-night-aqua:         #8abeb7; // Aqua
+$tomorrow-night-blue:         #81a2be; // Blue
+$tomorrow-night-purple:       #b294bb; // Purple
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    // background-color: $tomorrow-night-background;
+    background: url("../images/ian-valerio-CAFq0pv9HjY-unsplash.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: $tomorrow-night-foreground;
+}
+
+a {
+    color: $tomorrow-night-blue;
+}
+
+div.main-container {
+    background: mix($tomorrow-night-background, transparent, 50%);
+    color: $tomorrow-night-foreground;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+}
+
+div.block {
+    margin-bottom: 20px;
+    color: $tomorrow-night-foreground;
+}
+
+div.blank-block {
+    height: 5px;
+}
+
+div.header-block {
+    // display: flex;
+    margin-top: 10px;
+    justify-content: center;
+
+    div.avatar {
+        margin-bottom: 20px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+        }
+
+        i {
+            color: $tomorrow-night-foreground;
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+
+    header {
+        color: $tomorrow-night-foreground;
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+    }
+
+    p.intro {
+        font-size: .9em;
+        color: $tomorrow-night-foreground;
+    }
+}
+
+div.text-block {
+    color: $tomorrow-night-foreground;
+    font-size: 1em;
+}
+
+p {
+    margin: 0;
+}
+
+p.small-text {
+    font-size: .8em;
+}
+
+p.super-small-text {
+    font-size: .6em;
+    margin: 0;
+}
+
+div.dark-block {
+    background-color: mix($tomorrow-night-background, transparent, 70%);
+    border-radius: 30px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: mix($tomorrow-night-background, transparent, 70%);
+        box-shadow: 0 0 10px $tomorrow-night-background;
+    }
+}
+
+button.link-like {
+    background: none;
+    border: none;
+    color: $tomorrow-night-blue;
+    text-decoration: underline;
+}
+
+div.link-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-size: 16px;
+    min-height: 70px;
+
+    a {
+        width: 100%;
+        height: 100%;
+        padding: 15px 20px 15px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+
+    div.icon {
+        width: 60px;
+        margin-right: 10px;
+
+        i {
+            color: $tomorrow-night-foreground;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        img {
+            width: 40px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+
+    div.text {
+        color: $tomorrow-night-foreground;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+
+        p.main {
+            font-size: 1.2em;
+            margin: 0;
+        }
+
+        p.sub {
+            font-size: 1em;
+            margin: 0;
+        }
+    }
+
+    form {
+        width: 90%;
+        color: $tomorrow-night-foreground;
+    }
+
+    div.form-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        textarea {
+            width: 60%;
+        }
+
+        label {
+            margin-right: 5px;
+        }
+
+        input {
+            width: 60%;
+        }
+    }
+
+}
+
+.image-block {
+
+    a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 30px;
+        margin-bottom: 5px;
+    }
+}

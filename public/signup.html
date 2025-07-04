@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+    <link rel="icon" href="./assets/images/avatar.128.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/sytle.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header-block block">
+            <div class="avatar">
+                <i class="fa-solid fa-user-plus"></i>
+                <!-- <img src="./assets/images/avatar.default.jpg" alt="Avatar" class="avatar"> -->
+            </div>
+
+            <header>
+                <h1>Sign-up</h1>
+                <p>Join us!</p>
+            </header>
+
+        </div>
+
+        <!-- Text Block -->
+        <!-- <div class="text-block">
+            <p>This is a text block where you can write some information or description about yourself or your projects.
+            </p>
+        </div> -->
+
+        <div class="links-block block">
+            <div class="link-block dark-block">
+                <a href="./index.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div class="text">
+                        <p class="main">Back to My Homepage</p>
+                        <p class="sub">Home sweet home!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="link-block dark-block">
+                <a href="./chat.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <div class="text">
+                        <p class="main">Back to Message Board</p>
+                        <p class="sub">Leave some comment here!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="link-block dark-block">
+                <a href="./login.html">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    <div class="text">
+                        <p class="main">Log-in</p>
+                        <p class="sub">Welcome Back!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Empty Block -->
+        <div class="blank-block block"></div>
+
+        <div class="text-block block" id="welcome" style="display: none;">
+            <p>歡迎你，新朋友！</p>
+        </div>
+
+        <div class="links-block block" id="users">
+        </div>
+
+        <div class="link-block block dark-block" id="register-form-container">
+            <a>
+                <form id="register-form" autocomplete="on">
+                    <div class="form-section">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" required minlength="3" maxlength="20"
+                            pattern="^[A-Za-z0-9_]{3,20}$" autocomplete="username">
+                    </div>
+                    <div class="form-section">
+                        <p class="super-small-text">請使用 3–20 個字元的英文、數字或底線。</p>
+                    </div>
+                    <div class="form-section">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" minlength="8" required
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#%&@^`~])[A-Za-z\d#%&@^`~]{8,64}$"
+                            autocomplete="new-password">
+                    </div>
+                    <div class="form-section">
+                        <p class="super-small-text">
+                            需包含至少一個小寫字母、大寫字母、數字與符號（#%&@^`~），且僅能包含這些字元，長度 8–64 字元。
+                        </p>
+                    </div>
+                    <div class="form-section">
+                        <label for="avatar">Avatar:</label>
+                        <input type="file" name="avatar" id="avatar" accept=".jpg,.jpeg,.png" required>
+                        
+                    </div>
+                    <div class="form-section">
+                        <p class="super-small-text">僅接受小於 128 KiB 的 JPG 或 PNG 圖片。</p>
+                    </div>
+                    <div class="form-section">
+                        <button type="submit">Sign-up</button>
+                    </div>
+                </form>
+            </a>
+        </div>
+
+        <div class="blank-block block"></div>
+
+        <div class="text-block block">
+            <p class="small-text">Webpage design by <a href="https://github.com/undecv">undecV</a>.<br />
+                Background photo by: Ian Valerio,
+                <a
+                    href="https://unsplash.com/photos/aerial-view-photography-of-road-between-highrise-building-CAFq0pv9HjY">Unsplash</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/signup.js"></script>
+</body>
+
+</html>

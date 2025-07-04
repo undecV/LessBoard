@@ -1,0 +1,183 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("../images/ian-valerio-CAFq0pv9HjY-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #c5c8c6;
+}
+
+a {
+  color: #81a2be;
+}
+
+div.main-container {
+  background: rgba(29, 31, 33, 0.5);
+  color: #c5c8c6;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+  width: 350px;
+  text-align: center;
+}
+
+div.block {
+  margin-bottom: 20px;
+  color: #c5c8c6;
+}
+
+div.blank-block {
+  height: 5px;
+}
+
+div.header-block {
+  margin-top: 10px;
+  justify-content: center;
+}
+div.header-block div.avatar {
+  margin-bottom: 20px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.header-block div.avatar img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+div.header-block div.avatar i {
+  color: #c5c8c6;
+  font-size: 80px;
+  text-align: center;
+}
+div.header-block header {
+  color: #c5c8c6;
+}
+div.header-block header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+div.header-block header p {
+  margin: 0;
+  font-size: 1.2em;
+}
+div.header-block p.intro {
+  font-size: 0.9em;
+  color: #c5c8c6;
+}
+
+div.text-block {
+  color: #c5c8c6;
+  font-size: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+p.small-text {
+  font-size: 0.8em;
+}
+
+p.super-small-text {
+  font-size: 0.6em;
+  margin: 0;
+}
+
+div.dark-block {
+  background-color: rgba(29, 31, 33, 0.7);
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+div.dark-block:hover {
+  background-color: rgba(29, 31, 33, 0.7);
+  box-shadow: 0 0 10px #1d1f21;
+}
+
+button.link-like {
+  background: none;
+  border: none;
+  color: #81a2be;
+  text-decoration: underline;
+}
+
+div.link-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  font-size: 16px;
+  min-height: 70px;
+}
+div.link-block a {
+  width: 100%;
+  height: 100%;
+  padding: 15px 20px 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+div.link-block div.icon {
+  width: 60px;
+  margin-right: 10px;
+}
+div.link-block div.icon i {
+  color: #c5c8c6;
+  font-size: 30px;
+  text-align: center;
+}
+div.link-block div.icon img {
+  width: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+div.link-block div.text {
+  color: #c5c8c6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+div.link-block div.text p.main {
+  font-size: 1.2em;
+  margin: 0;
+}
+div.link-block div.text p.sub {
+  font-size: 1em;
+  margin: 0;
+}
+div.link-block form {
+  width: 90%;
+  color: #c5c8c6;
+}
+div.link-block div.form-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+div.link-block div.form-section textarea {
+  width: 60%;
+}
+div.link-block div.form-section label {
+  margin-right: 5px;
+}
+div.link-block div.form-section input {
+  width: 60%;
+}
+
+.image-block a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+.image-block img {
+  width: 100%;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=sytle.css.map */
